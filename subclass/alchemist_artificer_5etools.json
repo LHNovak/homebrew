@@ -1,0 +1,229 @@
+{
+  "subclass": [
+    {
+      "name": "Alchemist",
+      "shortName": "Alchemist",
+      "className": "Artificer",
+      "source": "HB",
+      "features": [
+        "feature-alchemist-3",
+        "feature-alchemist-spells-3",
+        "feature-alchemical-solutions-3",
+        "feature-expanded-formulas-5",
+        "feature-alchemical-savant-5",
+        "feature-alchemical-reactions-9",
+        "feature-efficient-production-9",
+        "feature-extra-reagents-15",
+        "feature-master-alchemist-15"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Alchemist",
+      "level": 3,
+      "source": "HB",
+      "entries": [
+        "When you adopt this specialization at 3rd level, you gain proficiency with **alchemist's supplies** or **herbalism kit**. If you already have proficiency in both tools, you gain proficiency with one other type of artisan's tools of your choice.",
+        "Additionally, crafting items with these tools costs you only **1/4 gp** instead of half."
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-alchemist-3"
+    },
+    {
+      "name": "Alchemist Spells",
+      "level": 3,
+      "source": "HB",
+      "entries": [
+        "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.",
+        {
+          "type": "table",
+          "caption": "Alchemist Spells",
+          "colLabels": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "colStyles": [
+            "col-2",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "*heroism*, *sleep*"
+            ],
+            [
+              "5th",
+              "*dragon's breath*, *enhance ability*"
+            ],
+            [
+              "9th",
+              "*fireball*, *haste*"
+            ],
+            [
+              "13th",
+              "*death ward*, *elemental bane*"
+            ],
+            [
+              "17th",
+              "*cloudkill*, *raise dead*"
+            ]
+          ]
+        }
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-alchemist-spells-3"
+    },
+    {
+      "name": "Alchemical Solutions",
+      "level": 3,
+      "source": "HB",
+      "entries": [
+        "At 3rd level, you gain access to a pool of **alchemy points**, which you can use to create solutions that replicate magical effects. You have a number of alchemy points equal to your **artificer level**, and these points are replenished after a long rest.",
+        {
+          "type": "entries",
+          "name": "Preparing Solutions",
+          "entries": [
+            "During a short or long rest, you can spend these points to prepare solutions that replicate spells from your **artificer spell list**.",
+            "You spend a number of alchemy points equal to the replicated spell’s level. A 1st-level spell consumes 1 alchemy point, a 2nd-level spell consumes 2 points, and so on.",
+            "The solutions cannot replicate a spell of a higher level than your highest available artificer spell slot."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Using Solutions",
+          "entries": [
+            "A creature can use the solution as a **bonus action**, activating the spell as if from a spell scroll.",
+            "The spell replicated by the solution uses your spellcasting ability for any rolls and does not require the creature to maintain concentration on the spell if it would normally need to.",
+            "All solutions lose their effect after a **long rest**."
+          ]
+        }
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-alchemical-solutions-3"
+    },
+    {
+      "name": "Expanded Formulas",
+      "level": 5,
+      "source": "HB",
+      "entries": [
+        "Choose one spell list: **Bard**, **Cleric**, **Druid**, **Sorcerer**, **Warlock**, or **Wizard**.",
+        "You can use your **alchemy points** to create *alchemical solutions* that replicate spells from the chosen list, following the same rules as in Alchemical Solutions class feature."
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-expanded-formulas-5"
+    },
+    {
+      "name": "Alchemical Savant",
+      "level": 5,
+      "source": "HB",
+      "entries": [
+        "Spells cast from an *alchemical solution* or artificer spells you cast gain a bonus to one roll for the spell.",
+        "This roll must restore hit points, **or** be a damage roll.",
+        "The bonus is equal to your **Intelligence modifier** (minimum of +1)."
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-alchemical-savant-5"
+    },
+    {
+      "name": "Alchemical Reactions",
+      "level": 9,
+      "source": "HB",
+      "entries": [
+        "When a creature uses an *alchemical solution*, you can apply one of the following enhancements:",
+        {
+          "type": "list",
+          "items": [
+            "**Healing Enhancements**: also grant temporary hit points equal to **half the healing granted**.",
+            "**Buff Enhancements**: also grant the **Dash**, **Dodge**, or **Disengage** actions as a bonus action.",
+            "**Damage Enhancements**: treated as if cast **1 level higher**.",
+            "**Summoning Enhancements**: summoned creature gains **temporary hit points** equal to **half its HP maximum**."
+          ]
+        },
+        "If an *alchemical solution* is eligible for more than one enhancement, you choose which option to apply when it is used."
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-alchemical-reactions-9"
+    },
+    {
+      "name": "Efficient Production",
+      "level": 9,
+      "source": "HB",
+      "entries": [
+        "- Creating *alchemical solutions* with monetary material components now costs only **half as much**.",
+        "- If the solution is unused until your next **long rest**, you regain the cost of the material components."
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-efficient-production-9"
+    },
+    {
+      "name": "Extra Reagents",
+      "level": 15,
+      "source": "HB",
+      "entries": [
+        "When you take a **short rest**, you gain extra **alchemy points** equal to **half your artificer level** (rounded down).",
+        "You can benefit from these extra points only **once per long rest**."
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-extra-reagents-15"
+    },
+    {
+      "name": "Master Alchemist",
+      "level": 15,
+      "source": "HB",
+      "entries": [
+        "When you use an alchemical solution, you gain one of the following enhancements:",
+        {
+          "type": "list",
+          "items": [
+            "**Healing**: grants **maximum possible healing**.",
+            "**Buffs**: +2 AC and **resistance to all damage**.",
+            "**Attack Rolls**: made with **advantage**.",
+            "**Saving Throws**: targets have **disadvantage**.",
+            "**Summons**: no material cost; summoned creature gains **bonus AC = your Int modifier (min +1)**."
+          ]
+        },
+        "If an *alchemical solution* is eligible for more than one enhancement, you choose which option to apply when it is used.",
+        "This feature does not interfere with the enhancements from **Alchemical Reactions**."
+      ],
+      "className": "Artificer",
+      "subclassShortName": "Alchemist",
+      "featureType": [
+        "subclass"
+      ],
+      "id": "feature-master-alchemist-15"
+    }
+  ]
+}
